@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+    <div align="center">
+        <h1>开发二部考试系统</h1>
+        <br>
+        <form action="/exam/" method="post">
+
+            <h4>{{choiceInfo.question}}</h4>
+            <input type="hidden" value={{choiceInfo.question_id}} name="question_id" />
+            <label style="display:block;" ><input name="answer" type="radio" value="1" /> {{choiceInfo.item1}} </label>
+            <label style="display:block;" ><input name="answer" type="radio" value="2"/>  {{choiceInfo.item2}} </label>
+            <label style="display:block;" ><input name="answer" type="radio" value="3" />  {{choiceInfo.item3}} </label>
+            <label style="display:block;" ><input name="answer" type="radio" value="4" />  {{choiceInfo.item4}} </label>
+            <br>
+           <input type="submit" value="下一题" />
+
+        </form>
+
+    </div>
+
+</body>
+</html>
